@@ -1,5 +1,6 @@
 FROM alpine:latest
 MAINTAINER pasi@pashi.net
+ENV VERSION 20161010-1
 
 RUN echo "http://dl-4.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories
 RUN apk --update add pdns pdns-backend-mysql 
